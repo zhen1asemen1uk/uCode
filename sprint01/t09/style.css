@@ -15,5 +15,7 @@ textarea{
     border-style: solid;
     border-width: 2px;
     border-color: silver;
+}
+.about{
     margin: 15px;
 }

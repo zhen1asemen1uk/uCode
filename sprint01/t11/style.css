@@ -1,6 +1,6 @@
 .weather{
     display: flex;
-    flex-direction: row;
+    /* flex-direction: row; */
     font-family: 'Lato', sans-serif;
 }
 .day1{
