@@ -1,6 +1,6 @@
 table {
     width: 0 auto;
-    
+    border: 1px solid silver;
 }
 td{
     padding: 10px;
@@ -8,7 +8,8 @@ td{
 .black {
     background-color: black;
     color: #ffffff;
-    
+    border-collapse:collapse;
+    border: 1px solid black;
 }
 
 .orenge {

@@ -1,0 +1,18 @@
+.in {
+    height: 500px;
+}
+.man {
+    height: 150px;
+    
+}
+.in:hover .man{
+visibility: hidden;}
+/* .allp:hover :nth-child(4n){
+    visibility: hidden;
+} */
+/* .qq:hover :nth-child(2n +1){
+    visibility: hidden;
+}
+.ww:hover :nth-child(2n){
+    visibility: hidden;
+} */
