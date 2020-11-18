@@ -1,15 +1,39 @@
 .in {
     height: 500px;
 }
+
 .man {
     height: 150px;
-    
 }
-.in:hover .man{
-visibility: hidden;}
+
+.in:hover+div>.man:nth-child(2n +1) {
+    visibility: hidden;
+}
+
+.in:hover+div+div>.man:nth-child(2n +2) {
+    visibility: hidden;
+}
+
+.in:hover+div+div+div>.man:nth-child(2n +1) {
+    visibility: hidden;
+}
+
+.in:hover+div+div+div+div>.man:nth-child(2n +2) {
+    visibility: hidden;
+}
+
+.in:hover+div+div+div+div+div>.man:nth-child(2n +1) {
+    visibility: hidden;
+}
+
+.in:hover+div+div+div+div+div+div>.man:nth-child(2n +2) {
+    visibility: hidden;
+}
+
 /* .allp:hover :nth-child(4n){
     visibility: hidden;
 } */
+
 /* .qq:hover :nth-child(2n +1){
     visibility: hidden;
 }
