@@ -1,13 +1,15 @@
-h1 span {
+span {
     font-weight: bold;
     font-size: 4em;
     font-family: Arial;
     color: white;
     position: relative;
-    margin: 100px;
-    top: 29px;
+    margin: auto 20%;
+    top: 30px;
 }
-h1{
-    background-color: red;
 
+h1 {
+    background-color: red;
+    position: relative;
+    margin: auto 1%;
 }
