@@ -20,7 +20,11 @@ a[href="http://nginx.org/"]::before, [href="http://test.www.link/"]::before {
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 a[href$=a]:hover::after {
+=======
+a:hover::after {
+>>>>>>> 10f167c27eaf7b4225d688525966a96913a66161
 =======
 a:hover::after {
 >>>>>>> 10f167c27eaf7b4225d688525966a96913a66161
