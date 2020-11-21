@@ -1,0 +1,12 @@
+input{
+    color:green; 
+  }
+ input:hover{
+   color: red;
+ } 
+  button{
+    color: green;
+  }
+  button:hover{
+    color: red;;
+  }

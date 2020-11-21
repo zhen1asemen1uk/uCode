@@ -1,0 +1,98 @@
+body {
+    font-family: 'Source Sans Pro';
+}
+
+h1 {
+    font-size: 45px;
+    color: slategrey;
+    text-align: center;
+    font-weight: bolder;
+}
+
+h2 {
+    text-align: left;
+    font-size: 35px;
+    color: palevioletred;
+    margin: 20px;
+    font-weight: bolder;
+}
+
+div {
+    margin: 10px;
+    padding: 20px;
+}
+
+form {
+    text-align: center;
+}
+
+label {
+    display: inline-block;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+label {
+    text-align: center;
+    color: slategrey;
+    padding: 30px;
+    width: 200px;
+    height: 15px;
+    margin: 5px;
+    border-radius: 100px;
+    background: white;
+    border: 1px solid black;
+}
+
+input:checked+label::after {
+    content: "\2713";
+    color: white;
+}
+
+input:checked+label {
+    color: white;
+    background: darkblue;
+}
+
+input:disabled+label::before {
+    background: white;
+    color: silver;
+}
+
+.data {
+    justify-content: left;
+    border: 0px;
+    border-bottom: 1px solid silver;
+    width: 100%;
+    margin: 25px;
+    padding: 10px;
+}
+
+.data1 {
+    display: flex;
+    float: left;
+    width: 100.5%;
+}
+
+::placeholder {
+    color: silver;
+    font-size: 20px;
+}
+
+.send {
+    display: inline-block;
+    border: 0px;
+    background-color: rgb(255, 152, 186);
+    color: white;
+    height: 50px;
+    position: relative;
+    width: 100%;
+    margin: auto 30px;
+}
+
+.send:hover {
+    background-color: red;
+    transition: background-color 5.1s;
+}

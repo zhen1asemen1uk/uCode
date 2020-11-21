@@ -1,0 +1,39 @@
+table {
+    width: 0 auto;
+    border: 1px solid silver;
+}
+td{
+    padding: 10px;
+}
+.black {
+    background-color: black;
+    color: #ffffff;
+    border-collapse:collapse;
+    border: 1px solid black;
+}
+
+.orenge {
+    background-color: orange;
+}
+.blue {
+    background-color: blue;
+}
+
+.yellow {
+    background-color: yellow;
+}
+.red {
+    background-color: red;
+}
+.green {
+    background-color: green;
+}
+.purple {
+    background-color: purple;
+}
+img {
+    height: 120;
+    border-radius: 30px;
+    width: 120px;
+    padding: 10px;
+}

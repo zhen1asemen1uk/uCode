@@ -1,0 +1,33 @@
+a[href="https://www.freecodecamp.org/"], [href="https://www.sitemaps.org/"] {
+    color: green;
+}
+
+a[href="https://www.freecodecamp.org/"]::after, [href="https://schema.org/a"]::after {
+    content: "\21D2";
+    color: coral;
+}
+
+a[href="https://developer.mozilla.org/"]::before, [href="https://validator.w3.org/"]::before, [href="https://www.freecodecamp.org/"]::before, [href="https://ucode.world/"]::before, [href="https://schema.org/a"]::before, [href="https://www.sitemaps.org/"]::before, [href="https://prometheus.org.ua"]::before {
+    content: "\00BB";
+    padding-right: 10px;
+}
+
+a[href="http://nginx.org/"]::before, [href="http://test.www.link/"]::before {
+    content: "\00D7";
+    color: red;
+    padding-right: 10px;
+}
+
+<<<<<<< HEAD
+<<<<<<< HEAD
+a[href$=a]:hover::after {
+=======
+a:hover::after {
+>>>>>>> 10f167c27eaf7b4225d688525966a96913a66161
+=======
+a:hover::after {
+>>>>>>> 10f167c27eaf7b4225d688525966a96913a66161
+    font-style: italic;
+    color: coral;
+    content: "\2026 last symbol is 'a'";
+}
