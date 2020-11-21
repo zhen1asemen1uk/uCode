@@ -8,8 +8,8 @@
     position: relative;
 }
 .Black-Widow:after{
-     content: "";
-     display: inline-block;
+    content: "";
+    display: inline-block;
     width: 100%;
     height: 115%;
     background-image: url(./assets/images/Black-Widow.png);
