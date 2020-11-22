@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<h1>Settings</h1>
+
+<body>
+    <div class="ALL">
+        <div class="all">
+
+            <div class="row1">
+                <div>
+                    <span>Typeface</span>
+                    <p><select name="Typeface" id="">
+                            <option value="Acunium Pro"><a href=""> Acunium Pro</a></option>
+                            <option value="Comic Sans"><a> Comic Sans</a></option>
+                            <option disabled value="Times New Roman"><a> Times New Roman</a></option>
+                        </select></p>
+                </div>
+                <div>
+                    <span>Weight</span>
+
+                    <p>
+                    <div class="twocheck"><input type="checkbox" id="checkbox-id" value="Regular">
+                        <label class="lab" for="checkbox-id"></label>
+                        <span>Regular</span>
+                        <input type="checkbox" id="checkbox-id1" value="Bold">
+                        <label class="lab" for="checkbox-id1"></label>
+                        <span>Bold</span>
+                        </p>
+                    </div>
+                    <div>
+                        <p> <span>Size</span> </p>
+                        <input type="range" oninput="font-size">
+                        <p><span>a A</span></p>
+                    </div>
+                </div>
+                <div class="row2">
+                    <div>
+                        <span>Darck UI</span>
+                        <label class="switch" for="checkboxes">
+                            <input type="checkbox" id="checkboxes" name="switch">
+                            <span class="slider"></span>
+                        </label>
+                    </div>
+                    <div>
+                        <span>Color</span>
+                        <div class="lab1">
+                            <input type="checkbox" id="Color" name="Color">
+                            <label class="lab2" for="Color"></label>
+                            <input type="checkbox" id="Color1" name="Color1">
+                            <label class="lab3" for="Color1"></label>
+                            <input type="checkbox" id="Color2" name="Color2">
+                            <label class="lab4" for="Color2"></label>
+                            <input type="checkbox" id="Color3" name="Color3">
+                            <label class="lab5" for="Color3"></label>
+                            <input type="checkbox" id="Color4" name="Color4">
+                            <label class="lab6" for="Color4"></label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+
+</html>

@@ -1,0 +1,242 @@
+
+h1{
+    text-align: center;
+}
+.ALL{
+    display: flex;
+    border: 1px solid silver;
+    height: 300px;
+    margin-left: 1%;
+    margin-right: 10%;
+    /* margin-top: 3%; */
+    /* padding: 1%; */
+    background-color: rgb(130, 179, 228);
+    border: 1px solid ;
+    
+}
+.all {
+    display: flex;
+    border: 1px solid silver;
+    /* height: 630px; */
+    margin-left: 1%;
+    margin-right: 10%;
+    /* margin-top: 3%; */
+    /* padding: 1%; */
+    background-color: #2c3a3d;
+    border: 1px solid rgb(81, 99, 117);
+}
+
+select {
+    background-color: grey;
+    color: white;
+}
+
+a {
+    background-color: grey;
+    color: white;
+}
+
+span {
+    color: gray;
+}
+
+.row1 {
+    display: block;
+    float: left;
+    padding: 3%;
+}
+
+.row2 {
+    display: block;
+    padding: 5%;
+    position: relative;
+    width: 330px;
+    left: 400px;
+    bottom: 350px;
+}
+
+.twocheck {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    right: 90px;
+}
+div {
+    padding: 6%;
+}
+
+input {
+    margin: 3%;
+}
+
+.lab {
+    display: inline-block;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+.lab {
+    text-align: center;
+    width: 20px;
+    height: 20px;
+    margin: 5px;
+    background: #2b2e30;
+    border: 1px solid white;
+}
+
+input:checked+.lab::after {
+    content: " \2713 ";
+    color: green;
+}
+
+.lab1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    right: 25px;
+}
+
+.lab2 {
+    display: inline-block;
+}
+
+.lab2 {
+    width: 30px;
+    height: 30px;
+    margin: 10px;
+    border-radius: 100%;
+    background: #2b2e30;
+    border: 1px solid white;
+    background-color: rgb(35, 141, 211);
+}
+
+input:checked+.lab2::after {
+    content: " \2713 ";
+    color: white;
+}
+
+.lab3 {
+    display: inline-block;
+}
+
+.lab3 {
+    width: 30px;
+    height: 30px;
+    margin: 10px;
+    border-radius: 100%;
+    background: #2b2e30;
+    border: 1px solid white;
+    background-color: rgb(30, 190, 30);
+}
+
+input:checked+.lab3::after {
+    content: " \2713 ";
+    color: white;
+}
+
+.lab4 {
+    display: inline-block;
+}
+
+.lab4 {
+    width: 30px;
+    height: 30px;
+    margin: 10px;
+    border-radius: 100%;
+    background: #2b2e30;
+    border: 1px solid white;
+    background-color: rgb(241, 18, 241);
+}
+
+input:checked+.lab4::after {
+    content: " \2713 ";
+    color: white;
+}
+
+.lab5 {
+    display: inline-block;
+}
+
+.lab5 {
+    width: 30px;
+    height: 30px;
+    margin: 10px;
+    border-radius: 100%;
+    background: #2b2e30;
+    border: 1px solid white;
+    background-color: yellow;
+}
+
+input:checked+.lab5::after {
+    content: " \2713 ";
+    color: white;
+}
+
+.lab6 {
+    display: inline-block;
+}
+
+.lab6 {
+    width: 30px;
+    height: 30px;
+    margin: 10px;
+    border-radius: 100%;
+    background: #2b2e30;
+    border: 1px solid white;
+    background-color: orange;
+}
+
+input:checked+.lab6::after {
+    content: " \2713 ";
+    color: white;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.switch input {
+    display: none;
+}
+
+.slider {
+    position: absolute;
+    width: 55px;
+    height: 30px;
+    top: 8px;
+    left: 120px;
+    right: 0;
+    bottom: px;
+    background-color: #2b2e30;
+    border-radius: 100px;
+    transition: .4s;
+}
+
+.slider::before {
+    position: absolute;
+    content: "";
+    height: 25px;
+    width: 25px;
+    left: 5px;
+    bottom: 3px;
+    background-color: #36b4c8;
+    border-radius: 100%;
+    transition: .4s;
+}
+
+input:checked+.slider {
+    background-color: rgb(0, 140, 255);
+}
+
+input:checked+.slider:before {
+    transform: translateX(20px);
+}
