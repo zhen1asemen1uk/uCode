@@ -28,33 +28,4 @@
 
 .in:hover+div+div+div+div+div+div>.man:nth-child(2n +2) {
     visibility: hidden;
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 }
-=======
-=======
->>>>>>> 10f167c27eaf7b4225d688525966a96913a66161
-=======
->>>>>>> 10f167c27eaf7b4225d688525966a96913a66161
-}
-
-/* .allp:hover :nth-child(4n){
-    visibility: hidden;
-} */
-
-/* .qq:hover :nth-child(2n +1){
-    visibility: hidden;
-}
-.ww:hover :nth-child(2n){
-    visibility: hidden;
-<<<<<<< HEAD
-<<<<<<< HEAD
-} */
->>>>>>> 10f167c27eaf7b4225d688525966a96913a66161
-=======
-} */
->>>>>>> 10f167c27eaf7b4225d688525966a96913a66161
-=======
-} */
->>>>>>> 10f167c27eaf7b4225d688525966a96913a66161
