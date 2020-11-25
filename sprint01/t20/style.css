@@ -1,0 +1,22 @@
+.boll {
+
+    background-color: green;
+    border-radius: 100%;
+    width: 100px;
+    height: 100px;
+    position: relative;
+  animation: new 10s linear infinite alternate 0s forwards;
+}
+@keyframes new{
+0%{
+left: 0;
+}
+100%{
+left: 1100px;
+}
+}
+
+.boll:hover {
+    background-color: red;
+    transition: 2s;
+}

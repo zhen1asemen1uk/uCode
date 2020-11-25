@@ -3,7 +3,7 @@ h1 {
 }
 
 .ALL {
-    display: flex;
+    display: inline-block ;
     border: 1px solid silver;
     height: 500px;
     margin: 20px 50px 20px 10px;
@@ -16,7 +16,8 @@ h1 {
 .all {
     display: flex;
     border: 1px solid silver;
-    width: 90%;
+    width: 96%;
+    height: 430px;
     padding: 50px 20px 20px 25px;
     background-color: #485e63;
     border: 1px solid rgb(81, 99, 117);
@@ -40,7 +41,7 @@ span {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    padding-right: 500px;
+    padding-right: 450px;
 }
 
 .row2 {
@@ -54,11 +55,8 @@ span {
 .twocheck {
     display: flex;
     flex-direction: row;
-    /* justify-content: center; */
-    /* text-align: center; */
     position: relative;
     right: 10px;
-    /* bottom: 10px; */
 }
 
 div {
@@ -232,7 +230,47 @@ input:checked+.slider:before {
     transform: translateX(30px);
 }
 
-input[type=range]{
-    color: red;
-    background-color: red;
+
+.image{
+width: 50px;
+height: 300px;
+background-color: slategray;
+border-top-right-radius: 25px;
+border-bottom-right-radius: 25px;
+position: absolute;
+top: 235px;
+left: 999px;
 }
+img{
+    display: flex;
+    flex-direction: column;
+    height: 45px;
+    position: relative ;
+    padding: 15px;
+    right: 8px;
+    top: 0px;
+}
+input[type=range]{
+    color: black;
+    background-color: black;
+}
+input[type=range]  {
+    width: 130px;
+    -webkit-appearance: none;
+    appearance: none;
+  }
+  input[type=range]::-webkit-slider-runnable-track {
+    border-radius: 100%;
+    height: 1px;
+    border: 1px solid  black;
+    background-color: black;
+  }
+  input[type=range]::-webkit-slider-thumb {
+    background: #36b4c8;
+    border: 2px solid #36b4c8;
+    border-radius: 100%;
+    width:20px;
+    height: 20px;
+    -webkit-appearance: none;
+    margin-top: -9px;
+  }

@@ -1,0 +1,88 @@
+h1 {
+    text-align: center;
+}
+
+.title {
+    font-size: 30px;
+    font-weight: 800;
+}
+
+.all {
+    display: flex;
+    flex-wrap: wrap;
+    height: 110px;
+    width: 100%;
+}
+
+@media screen and (max-width: 320px) {
+    .hh {
+        border: 1px solid silver;
+        width: 320px;
+        height: 80px;
+        padding: 5px;
+        margin: 20px;
+        float: left;
+    }
+    .all {
+        font-size: 6px;
+    }
+    .title {
+        font-size: 11px;
+        font-weight: 800;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .hh {
+        border: 1px solid silver;
+        padding: 30px;
+        margin: 0 auto;
+        width: 640px;
+        height: 150px;
+    }
+    .all {
+        font-size: 19px;
+        justify-content: center;
+    }
+    .title {
+        font-size: 30px;
+        font-weight: 800;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .hh {
+        border: 1px solid silver;
+        width: 225px;
+        height: 80px;
+        padding: 5px;
+        margin: 5px;
+    }
+    .all {
+        font-size: 6px;
+    }
+    .title {
+        font-size: 12px;
+        font-weight: 800;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .hh {
+        border: 1px solid silver;
+        width: 225px;
+        height: 80px;
+        padding: 5px;
+        margin: 5px;
+    }
+    .all {
+        width: 1000px;
+        font-size: 6px;
+        display: flex;
+        justify-content: center;
+    }
+    .title {
+        font-size: 12px;
+        font-weight: 800;
+    }
+}

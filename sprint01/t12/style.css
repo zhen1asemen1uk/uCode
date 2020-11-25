@@ -1,11 +1,46 @@
-h1{
+h1 {
     margin-left: 100px;
 }
-.box{
+
+.box {
+    position: relative;
+    top: 50px;
     text-align: left;
-    background-color: silver ;
+    background-color: silver;
     padding: 20px;
     margin-left: 100px;
     margin-right: 100px;
-    border: 1px solid ;
+    border: 1px solid;
+    width: 440px;
+    height: 20px;
+}
+
+.box::before {
+    display: block;
+    content: "";
+    position: absolute;
+    left: -40px;
+    top: -1px;
+    width: 560px;
+    height: 60px;
+    background-color: white;
+    border: 1px solid black;
+    border-left-style: none;
+    border-right-style: none;
+    z-index: -1;
+}
+
+.box::after {
+    display: block;
+    content: "";
+    position: absolute;
+    left: -1px;
+    top: -40px;
+    width: 480px;
+    height: 140px;
+    background-color: white;
+    border: 1px solid black;
+    border-top-style: none;
+    border-bottom-style: none;
+    z-index: -2;
 }

@@ -3,23 +3,25 @@ h1 {
   flex-direction: row;
   justify-content: space-around;
 }
-div{
+
+div {
   display: flex;
 }
-input {
-color: green;
-flex-basis: 100%;
 
+input {
+  color: green;
+  flex-basis: 100%;
 }
+
 input:hover {
   color: red;
 }
 
 button {
-  color: green;  
+background-size: 90%;
+  color: green;
 }
 
 button:hover {
   color: red;
-  ;
 }
