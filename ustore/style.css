@@ -1,0 +1,290 @@
+html {
+   font-family: Russo One;
+}
+
+body {
+   background-color: black;
+}
+
+.wrapp {
+   margin: 10px;
+   background-color: brown;
+}
+
+.header {
+   position: fixed;
+   top: 0%;
+   left: 0%;
+   right: 0%;
+   height: 80px;
+   background-color: #FBED10;
+   z-index: 50;
+   box-shadow: 0px 5px 20px 5px rgba(251, 237, 16, 0.6);
+}
+
+.tel {
+   position: fixed;
+   margin-top: -2px;
+   font-size: 15px;
+   cursor: pointer;
+}
+
+.te {
+   float: left;
+   margin-left: 180px;
+   margin-top: 2px;
+   width: 15px;
+}
+
+.logo {
+   position: fixed;
+   width: 80px;
+   left: 80px;
+   cursor: pointer;
+}
+
+.menu {
+   position: fixed;
+   top: 25px;
+   left: 170px;
+   border: 4px double black;
+   width: 80px;
+   height: 30px;
+   text-align: center;
+   font-size: 25px;
+   cursor: pointer;
+   background-color: black;
+   color: #FBED10;
+   border-radius: 4px;
+}
+
+.search {
+   position: fixed;
+   top: 20px;
+   left: 40%;
+   height: 30px;
+   width: 500px;
+   background-color: black;
+   color: #FBED10;
+   border-radius: 5px;
+   outline: none;
+}
+
+.search::placeholder {
+   color: #FBED10;
+}
+
+.searchBTN {
+   position: fixed;
+   top: 20px;
+   left: 1015px;
+   background-color: black;
+   color: #FBED10;
+   font-weight: bolder;
+   border-radius: 4px;
+   height: 35px;
+}
+
+.corz {
+   position: fixed;
+   max-width: 5%;
+   top: 9px;
+   right: 70px;
+   cursor: pointer;
+}
+
+#miniCard:hover {
+   display: block;
+}
+
+.pictureCorz:hover+#miniCard {
+   display: block;
+}
+
+.pictureCorz {
+   padding-bottom: 20px;
+}
+
+#miniCard {
+   position: absolute;
+   top: 70px;
+   display: none;
+   background-color: black;
+   color: #FBED10;
+   border: 2px solid #FBED10;
+   width: 130px;
+   font-size: 13px;
+}
+
+.minus, .plus {
+   border: 1px solid #FBED10;
+   color: #FBED10;
+   background-color: black;
+   margin: 3px;
+   height: 20px;
+   width: 21px;
+}
+
+.BTNs {
+   margin: 0px auto;
+}
+
+.cor {
+   margin: -5px;
+   width: 10%;
+}
+
+.main {
+   position: relative;
+   top: 100px;
+   height: 100%;
+   width: 100%;
+   /* background-color: #FBED10; */
+   text-align: center;
+}
+
+h2 {
+   font-size: 30px;
+   color: #FBED10;
+}
+
+ul.breadcrumb {
+   text-align: left;
+   padding: 10px 16px;
+   list-style: none;
+   background-color: black;
+   border: 1px solid #FBED10;
+}
+
+ul.breadcrumb li {
+   display: inline;
+   font-size: 18px;
+}
+
+ul.breadcrumb li+li:before {
+   padding: 8px;
+   color: #FBED10;
+   content: "/\00a0";
+}
+
+ul.breadcrumb li a {
+   color: #FBED10;
+   text-decoration: none;
+}
+
+ul.breadcrumb li a:hover {
+   background-color: #FBED10;
+   color: black;
+   text-decoration: underline;
+}
+
+.card {
+   display: inline-block;
+   max-height: 700px;
+   width: 350px;
+   text-align: center;
+   margin: 2%;
+   border: 3px solid black;
+   border-radius: 10px;
+   background-color: #FBED10;
+}
+
+.card:hover {
+   box-shadow: 0px 0px 20px 10px rgba(251, 237, 16, 0.6);
+}
+
+img {
+   width: 100%;
+}
+
+.detals {
+   display: block;
+   width: 98%;
+   margin: 2px auto 2px auto;
+   font-size: 20px;
+   background-color: black;
+   border-radius: 5px;
+   color: #FBED10;
+}
+
+.detalsName {
+   display: block;
+   width: 98%;
+   margin: 2px auto 2px auto;
+   font-size: 20px;
+   background-color: black;
+   border-radius: 5px;
+   color: #FBED10;
+   height: 50px;
+}
+
+.detalsDetal {
+   display: block;
+   width: 98%;
+   margin: 2px auto 2px auto;
+   font-size: 20px;
+   background-color: black;
+   border-radius: 5px;
+   color: #FBED10;
+   text-align: left;
+   height: 175px;
+   padding: 2px;
+}
+
+.addToCard {
+   display: block;
+   font-size: 25px;
+   font-weight: bolder;
+   height: 45px;
+   width: 99%;
+   margin: 5px auto 2px auto;
+   border-radius: 12px;
+   background-color: #54e346;
+   /* background-color: #FBED10; */
+   cursor: pointer;
+}
+
+#pagination {
+   display: flex;
+   padding: 0;
+   list-style-type: none;
+   justify-content: center;
+}
+
+#pagination li {
+   margin-right: 5px;
+   padding: 10px;
+   border: 1px solid#FBED10;
+   color: #FBED10;
+   margin: 10px;
+   max-width: 100%;
+}
+
+#pagination li:hover, #pagination li.active {
+   cursor: pointer;
+   color: red;
+   border: 1px solid red;
+}
+
+.footer {
+   position: relative;
+   bottom: -100px;
+   max-height: 100px;
+   width: 101%;
+   background-color: red;
+}
+
+.autor {
+   float: left;
+   text-align: right;
+   width: 25%;
+   margin: 25px auto auto auto;
+}
+
+.visa {
+   display: inline-block;
+   border-radius: 20px;
+   margin: 20px;
+   background-color: white;
+   width: 100px;
+}

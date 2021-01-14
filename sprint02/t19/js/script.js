@@ -19,7 +19,7 @@ function checkBrackets(str) {
         else if (b > a) {
             c = b - a;
         }else if (a = b){
-            c = 2;
+            c = 2 ;
         }
     }
     return c;

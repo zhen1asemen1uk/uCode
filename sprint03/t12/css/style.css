@@ -1,0 +1,54 @@
+.add {
+  width: 130px;
+  height: 30px;
+  background-color: cyan;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  float: left;
+  margin-right: 200px;
+  margin-left: 20px;
+}
+.clear {
+  width: 130px;
+  height: 30px;
+  display: block;
+  border: none;
+  border-radius: 5px;
+}
+.conteiner1 {
+  margin: 20px;
+  padding: 5px;
+  background-color: #efefef;
+  width: 450px;
+  height: 190px;
+  border-radius: 10px;
+}
+.conteiner2 {
+  background-color: #efefef;
+  width: 450px;
+  margin: 20px;
+  padding: 5px;
+  border-radius: 10px;
+}
+span {
+  margin: 25px;
+  padding: 5px;
+}
+#text1 {
+  display: block;
+  width: 400px;
+  height: 150px;
+  margin: auto;
+  border-color: cyan;
+  border-radius: 5px;
+}
+.text2 {
+  display: block;
+  width: 400px;
+  height: 40px;
+  margin: 5px auto 20px auto;
+  border: none;
+  background-color: white;
+  border-radius: 5px;
+}

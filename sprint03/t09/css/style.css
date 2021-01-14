@@ -1,0 +1,120 @@
+html {
+  font-family: Yeon Sung;
+  font-size: 130%;
+}
+
+h1 {
+  color: yellow;
+}
+
+.wramp {
+  text-align: center;
+  background-color: black;
+  width: 1050px;
+  height: 800px;
+  margin: auto;
+  border-radius: 40px;
+}
+
+table {
+  position: relative;
+  left: 100px;
+  margin: auto;
+  width: 650px;
+  height: 650px;
+  border: 5px solid yellow;
+  float: left;
+  /* border-collapse: collapse; */
+}
+
+tr {
+  background-color: black;
+  border: 5px solid yellow;
+  margin: auto;
+}
+
+td {
+  width: 200px;
+  height: 200px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border: 5px solid yellow;
+  color: yellow;
+  margin: auto;
+  font-size: 100px;
+}
+
+.bar {
+  border: 5px solid yellow;
+  height: 640px;
+  width: 200px;
+  display: inline-block;
+}
+
+.player1 {
+  color: yellow;
+  padding: 5px;
+  height: 20px;
+  width: 90px;
+  border: 1px solid yellow;
+  position: relative;
+  border-radius: 5px;
+  margin: 20px auto 2px auto;
+}
+
+.player2 {
+  color: yellow;
+  padding: 5px;
+  height: 20px;
+  width: 90px;
+  border: 1px solid yellow;
+  position: relative;
+  border-radius: 5px;
+  margin: 2px auto 2px auto;
+}
+
+.num {
+  font-size: large;
+  margin: 15px auto 5px auto;
+  background-color: black;
+  color: yellow;
+}
+
+.counter {
+  display: block;
+  background-color: black;
+  color: yellow;
+  font-weight: bolder;
+  font-size: xx-large;
+}
+
+.playAgain {
+  position: relative;
+  bottom: -390px;
+  padding: 5px;
+  height: 40px;
+  width: 130px;
+  border-radius: 5px;
+  margin: auto;
+  color: black;
+  border: 1px solid yellow;
+  background-color: yellow;
+}
+
+.black {
+  background-color: yellow;
+  color: black;
+}
+
+.winer {
+  font-size: xx-large;
+  color: yellow;
+}
+
+.green {
+  background-color: green;
+}
+
+.red {
+  background-color: red;
+}
