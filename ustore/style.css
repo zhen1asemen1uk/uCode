@@ -20,6 +20,7 @@ body {
    background-color: #FBED10;
    z-index: 50;
    box-shadow: 0px 5px 20px 5px rgba(251, 237, 16, 0.6);
+   font-weight: 800;
 }
 
 .tel {
@@ -39,23 +40,60 @@ body {
 .logo {
    position: fixed;
    width: 80px;
-   left: 80px;
+   left: 2%;
    cursor: pointer;
 }
 
 .menu {
+   font-family: Roboto Condensed;
+   transition: 0.5s;
    position: fixed;
-   top: 25px;
-   left: 170px;
+   top: 5px;
+   left: 10%;
    border: 4px double black;
-   width: 80px;
+   width: 115px;
    height: 30px;
-   text-align: center;
+   text-align: left;
    font-size: 25px;
    cursor: pointer;
    background-color: black;
    color: #FBED10;
    border-radius: 4px;
+   background-color: black;
+}
+
+li.menuLi {
+   text-align: center;
+   position: relative;
+   right: 20px;
+   top: 5px;
+   display: none;
+   background-color: black;
+   width: 100%;
+   border: 2px solid #FBED10;
+   font-size: 1.5vw;
+}
+
+hr {
+   position: relative;
+   right: 20px;
+   top: 5px;
+   display: none;
+   margin: 0%;
+}
+
+ul.menu:hover hr {
+   display: block;
+}
+
+ul.menu:hover li.menuLi {
+   display: block;
+}
+
+li.menuLi:hover {
+   color: red;
+   display: block;
+   transition: 0.3s;
 }
 
 .search {
@@ -77,7 +115,7 @@ body {
 .searchBTN {
    position: fixed;
    top: 20px;
-   left: 1015px;
+   right: 10%;
    background-color: black;
    color: #FBED10;
    font-weight: bolder;
@@ -88,24 +126,40 @@ body {
 .corz {
    position: fixed;
    max-width: 5%;
-   top: 9px;
-   right: 70px;
+   top: 6px;
+   right: 2%;
    cursor: pointer;
+   transition: 0.5s;
 }
 
 #miniCard:hover {
    display: block;
+   transition: 1s;
 }
 
 .pictureCorz:hover+#miniCard {
    display: block;
+   transition: 1s;
 }
 
 .pictureCorz {
    padding-bottom: 20px;
 }
 
+#easynetshop-cart-count {
+   background-color: black;
+   color: #FBED10;
+   width: 20px;
+   height: 20px;
+   padding: 5px;
+   border-radius: 100px;
+   position: relative;
+   left: 60px;
+   bottom: 50px;
+}
+
 #miniCard {
+   right: -25px;
    position: absolute;
    top: 70px;
    display: none;
@@ -136,7 +190,7 @@ body {
 
 .main {
    position: relative;
-   top: 100px;
+   top: 80px;
    height: 100%;
    width: 100%;
    /* background-color: #FBED10; */
@@ -154,6 +208,7 @@ ul.breadcrumb {
    list-style: none;
    background-color: black;
    border: 1px solid #FBED10;
+   transition: 0.5s;
 }
 
 ul.breadcrumb li {
@@ -178,6 +233,36 @@ ul.breadcrumb li a:hover {
    text-decoration: underline;
 }
 
+.sort {
+   background-color: black;
+   color: #FBED10;
+   border: 1px solid #FBED10;
+   text-align: left;
+   padding-left: 10px;
+   transition: 0.5s;
+}
+
+.btnSortCostUp, .btnSortCostDown {
+   background-color: black;
+   color: #FBED10;
+   border: 1px solid #FBED10;
+   padding: 5px;
+   margin: 5px;
+}
+
+.btnSortCostUp:hover, .btnSortCostDown:hover {
+   color: black;
+   transition: 0.3s;
+   background-color: #FBED10;
+}
+
+.check {
+   display: inline-block;
+   border: 1px solid #FBED10;
+   margin: 5px;
+   padding: 5px;
+}
+
 .card {
    display: inline-block;
    max-height: 700px;
@@ -187,6 +272,7 @@ ul.breadcrumb li a:hover {
    border: 3px solid black;
    border-radius: 10px;
    background-color: #FBED10;
+   transition: 0.5s;
 }
 
 .card:hover {
@@ -287,4 +373,317 @@ img {
    margin: 20px;
    background-color: white;
    width: 100px;
+}
+
+@media (max-width: 320px) {
+   html {
+      font-family: Russo One;
+      width: 100%;
+   }
+   .logo {
+      position: fixed;
+      width: 40px;
+      left: 2%;
+      cursor: pointer;
+   }
+   .menu {
+      transition: 0.5s;
+      position: fixed;
+      top: 15px;
+      left: 2%;
+      border: 4px double black;
+      width: 115px;
+      height: 25px;
+      text-align: left;
+      font-size: 25px;
+      cursor: pointer;
+      background-color: black;
+      color: #FBED10;
+      border-radius: 4px;
+      background-color: black;
+   }
+   .corz {
+      position: fixed;
+      max-width: 15%;
+      top: 9px;
+      right: 70px;
+      cursor: pointer;
+      transition: 0.5s;
+   }
+   .search {
+      display: none;
+   }
+   .searchBTN {
+      display: none;
+   }
+   ul.breadcrumb {
+      text-align: left;
+      padding: 10px 16px;
+      list-style: none;
+      background-color: black;
+      border: 1px solid #FBED10;
+      transition: 0.5s;
+      width: 80%;
+   }
+   .sort {
+      background-color: black;
+      color: #FBED10;
+      border: 1px solid #FBED10;
+      text-align: left;
+      padding-left: 10px;
+      transition: 0.5s;
+      width: 90%;
+      margin: 0 auto;
+   }
+   .card {
+      display: inline-block;
+      max-height: 700px;
+      /* width: 350px; */
+      max-width: 100%;
+      text-align: center;
+      margin: 2%;
+      border: 3px solid black;
+      border-radius: 10px;
+      background-color: #FBED10;
+      transition: 0.5s;
+   }
+   #miniCard {
+      position: absolute;
+      top: 70px;
+      right: 0px;
+      display: none;
+      background-color: black;
+      color: #FBED10;
+      border: 2px solid #FBED10;
+      width: 130px;
+      font-size: 13px;
+   }
+   .footer {
+      position: relative;
+      bottom: -100px;
+      max-height: 100px;
+      width: 100%;
+      height: 100%;
+      background-color: red;
+   }
+}
+
+@media (max-width: 768px) {
+   .logo {
+      position: fixed;
+      width: 40px;
+      left: 2%;
+      cursor: pointer;
+   }
+   .menu {
+      transition: 0.5s;
+      position: fixed;
+      top: 15px;
+      left: 2%;
+      border: 4px double black;
+      width: 115px;
+      height: 25px;
+      text-align: left;
+      font-size: 25px;
+      cursor: pointer;
+      background-color: black;
+      color: #FBED10;
+      border-radius: 4px;
+      background-color: black;
+   }
+   .corz {
+      position: fixed;
+      max-width: 6%;
+      top: 9px;
+      right: 5%;
+      cursor: pointer;
+      transition: 0.5s;
+   }
+   .search {
+      position: fixed;
+      top: 40px;
+      left: 190px;
+      height: 30px;
+      width: 250px;
+      background-color: black;
+      color: #FBED10;
+      border-radius: 5px;
+      outline: none;
+   }
+   .searchBTN {
+      position: fixed;
+      top: 40px;
+      left: 450px;
+      background-color: black;
+      color: #FBED10;
+      font-weight: bolder;
+      border-radius: 4px;
+      height: 35px;
+   }
+   ul.breadcrumb {
+      text-align: left;
+      padding: 10px 16px;
+      list-style: none;
+      background-color: black;
+      border: 1px solid #FBED10;
+      transition: 0.5s;
+      width: 97%;
+   }
+   .sort {
+      background-color: black;
+      color: #FBED10;
+      border: 1px solid #FBED10;
+      text-align: left;
+      padding-left: 10px;
+      transition: 0.5s;
+      width: 100%;
+      margin: 0 auto;
+   }
+   .card {
+      display: inline-block;
+      max-height: 700px;
+      /* width: 350px; */
+      max-width: 100%;
+      text-align: center;
+      margin: 1%;
+      border: 3px solid black;
+      border-radius: 10px;
+      background-color: #FBED10;
+      transition: 0.5s;
+   }
+   #miniCard {
+      position: absolute;
+      top: 70px;
+      right: 0px;
+      display: none;
+      background-color: black;
+      color: #FBED10;
+      border: 2px solid #FBED10;
+      width: 130px;
+      font-size: 13px;
+   }
+   .footer {
+      position: relative;
+      bottom: -100px;
+      max-height: 100px;
+      width: 100%;
+      height: 100%;
+      background-color: red;
+   }
+   #miniCard:active {
+      display: block;
+   }
+   .pictureCorz:active+#miniCard {
+      display: block;
+   }
+}
+
+@media (max-width: 1210px) {
+   .logo {
+      position: fixed;
+      width: 40px;
+      left: 2%;
+      cursor: pointer;
+   }
+   .menu {
+      transition: 0.5s;
+      position: fixed;
+      top: 15px;
+      left: 2%;
+      border: 4px double black;
+      width: 115px;
+      height: 25px;
+      text-align: left;
+      font-size: 25px;
+      cursor: pointer;
+      background-color: black;
+      color: #FBED10;
+      border-radius: 4px;
+      background-color: black;
+   }
+   .corz {
+      position: fixed;
+      max-width: 6%;
+      top: 9px;
+      right: 5%;
+      cursor: pointer;
+      transition: 0.5s;
+   }
+   .search {
+      position: fixed;
+      top: 40px;
+      left: 300px;
+      height: 30px;
+      width: 300px;
+      background-color: black;
+      color: #FBED10;
+      border-radius: 5px;
+      outline: none;
+   }
+   .searchBTN {
+      position: fixed;
+      top: 40px;
+      left: 615px;
+      background-color: black;
+      color: #FBED10;
+      font-weight: bolder;
+      border-radius: 4px;
+      height: 35px;
+   }
+   ul.breadcrumb {
+      text-align: left;
+      padding: 10px 16px;
+      list-style: none;
+      background-color: black;
+      border: 1px solid #FBED10;
+      transition: 0.5s;
+      width: 97%;
+   }
+   .sort {
+      background-color: black;
+      color: #FBED10;
+      border: 1px solid #FBED10;
+      text-align: left;
+      padding-left: 10px;
+      transition: 0.5s;
+      width: 100%;
+      margin: 0 auto;
+   }
+   .card {
+      display: inline-block;
+      max-height: 700px;
+      /* width: 350px; */
+      max-width: 100%;
+      text-align: center;
+      margin: 1%;
+      border: 3px solid black;
+      border-radius: 10px;
+      background-color: #FBED10;
+      transition: 0.5s;
+   }
+   #miniCard {
+      position: absolute;
+      top: 70px;
+      right: 0px;
+      display: none;
+      background-color: black;
+      color: #FBED10;
+      border: 2px solid #FBED10;
+      width: 130px;
+      font-size: 13px;
+   }
+   .footer {
+      position: relative;
+      bottom: -100px;
+      max-height: 100px;
+      width: 100%;
+      height: 100%;
+      background-color: red;
+   }
+   #miniCard:hover {
+      display: block;
+   }
+   .pictureCorz:hover+#miniCard {
+      display: block;
+   }
 }

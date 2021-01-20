@@ -1,9 +1,9 @@
 let cart = {};
-
+let count_cart = 0;
 
 // Товари
 let goods = {
-   28285: {
+   "28285": {
       "name": "М'яч баскетбольний Nike Dominate Amber",
       "detals": "Вид - Баскетбольний <br> Тип - М'яч <br> Вага - 584 г <br> Матеріал - Гума <br> Країна виробник товару - Таїланд",
       "cost": 649,
@@ -116,112 +116,121 @@ let goods = {
       "sklad": 10
    }
 };
+
 //Запуск функцій
-loadItems();
 checkCart();
 showMiniCart();
 
-// Цикл для карток товару
-function loadItems() {
-   let card = '';
-   for (var key in goods) {
-      card += '<div class="card">'
-      card += '<span class="detalsName">' + goods[key].name + '</span >';
-      card += '<img src="' + goods[key].img + '">';
-      card += '<span class="detalsDetal">Опис:<br> ' + goods[key].detals + '</span > ';
-      card += '<span class="detals">Ціна: ' + goods[key].cost + '₴</span > ';
-      card += '<span class="detals">Наявність: ' + goods[key].sklad + 'шт.</span > ';
-      card += '<button class="addToCard" data-art="' + key + '"><span>В корзину</span> <img class="cor" src="./assets/add-to-cart.png" alt="Корзинка"></button>';
-      card += '</div>';
-   }
-   document.getElementById('cardJS').innerHTML = card;
+//Пагінація
+let arrGoods = Object.entries(goods);
+let pagination = document.querySelector('#pagination');
+let notesOnPage = 6;
+let countOfItems = Math.ceil(arrGoods.length / notesOnPage);
+let showPage = (function () {
+   let active;
+
+   return function (item) {
+      if (active) {
+         active.classList.remove('active');
+      }
+      active = item;
+      item.classList.add('active');
+      let pageNum = +item.innerHTML;
+      let start = (pageNum - 1) * notesOnPage;
+      let end = start + notesOnPage;
+      let notes = arrGoods.slice(start, end);
+      let arrGoodsToObj = Object.fromEntries(notes);
+
+      //Сортування товарів
+      // document.querySelector('.btnSortCostUp').addEventListener('click', function () {
+      //       console.log(notes.sort(function (a, b) { b.cost - a.cost }));
+      //    // notes[0].sort(function (a, b) { b.cost - a.cost})
+      // });
+      // document.querySelector('.btnSortCostDown').addEventListener('click', function () {
+      //    let arrGoods = Object.entries(goods);
+      //    goods = arrGoods.sort((a, b) => (b.cost - a.cost));
+      // });
+
+      // Цикл для карток товару
+      let card = '';
+      for (var key in arrGoodsToObj) {
+         card += '<div class="card">'
+         card += '<span class="detalsName">' + arrGoodsToObj[key].name + '</span >';
+         card += '<img src="' + arrGoodsToObj[key].img + '">';
+         card += '<span class="detalsDetal">Опис:<br> ' + arrGoodsToObj[key].detals + '</span > ';
+         card += '<span class="detals">Ціна: ' + arrGoodsToObj[key].cost + '₴</span > ';
+         card += '<span class="detals">Наявність: ' + arrGoodsToObj[key].sklad + 'шт.</span > ';
+         card += '<button class="addToCard" data-art="' + key + '"><span>В корзину</span> <img class="cor" src="./assets/add-to-cart.png" alt="Корзинка"></button>';
+         card += '</div>';
+      }
+      document.getElementById('cardJS').innerHTML = card;
+
+      //Корзина
+      let all = document.querySelectorAll('.addToCard');
+
+      //Цикл перебору кнопок для кліку по 'додати в корзину'
+      for (var i = 0; i < all.length; i++) {
+         all[i].addEventListener('click', addCard);
+      }
+   };
+}());
+
+let items = [];
+let liPrev = document.createElement('li');
+let liNext = document.createElement('li');
+
+liPrev.addEventListener('click', function () { showPage(items[1]); });
+liNext.addEventListener('click', function () { showPage(items[2]); });
+
+liPrev.innerHTML = '< Попередня';
+pagination.appendChild(liPrev);
+//вирахуання сторінок
+for (let i = 1; i <= countOfItems; i++) {
+   let li = document.createElement('li');
+   li.innerHTML = i;
+   pagination.appendChild(li);
+   items.push(li);
 }
 
-// //Пагінація
-// let obj = Object.keys(goods);
-// let pagination = document.querySelector('#pagination');
-
-// let notesOnPage = 6;
-// let countOfItems = Math.ceil(obj.length / notesOnPage);
-
-// let showPage = (function () {
-//    let active;
-
-//    return function (item) {
-//       if (active) {
-//          active.classList.remove('active');
-//       }
-//       active = item;
-
-//       item.classList.add('active');
-
-//       // let pageNum = +item.innerHTML;
-
-//       //       let start = (pageNum - 1) * notesOnPage;
-//       //       let end = start + notesOnPage;
-
-//       //       let notes = obj.slice(start, end);
-
-//       //       // table.innerHTML = '';
-//       //       for (let note of notes) {
-//       //          let tr = document.createElement('tr');
-//       //          // table.appendChild(tr);
-
-//       //          createCell(note.name, tr);
-//       //          createCell(note.surname, tr);
-//       //          createCell(note.age, tr);
-//       //       }
-//    };
-// }());
-
-// let items = [];
-// for (let i = 1; i <= countOfItems; i++) {
-//    let li = document.createElement('li');
-//    li.innerHTML = i;
-//    pagination.appendChild(li);
-//    items.push(li);
-// }
-
-// showPage(items[0]);
-
-// // for (let item of items) {
-// //    item.addEventListener('click', function () {
-// //       showPage(this);
-// //    });
-// // }
-
-// // function createCell(text, tr) {
-// //    let td = document.createElement('td');
-// //    td.innerHTML = text;
-// //    tr.appendChild(td);
-// // }
-
-
-//Корзина
-let all = document.querySelectorAll('.addToCard');
-//Цикл перебору кнопок для кліку
-for (var i = 0; i < all.length; i++) {
-   all[i].addEventListener('click', addCard);
+liNext.innerHTML = 'Наступна >';
+pagination.appendChild(liNext);
+showPage(items[0]);
+for (let item of items) {
+   item.addEventListener('click', function () {
+      showPage(this);
+   });
 }
+
 
 //додавання в корзину
 function addCard() {
    let articul = this.getAttribute('data-art');
    if (cart[articul] != undefined) {
       cart[articul]++;
+      count_cart++;
    }
    else {
       cart[articul] = 1;
+      count_cart += 1;
+
    }
    localStorage.setItem('cart', JSON.stringify(cart));
+   localStorage.setItem('count_cart', JSON.stringify(count_cart));
+
    showMiniCart();
+   cartCount();
 }
 
+//лічильник kількість в корзині
+function cartCount() {
+   document.querySelector('#easynetshop-cart-count').innerHTML = count_cart;
+}
 
 //перевірка що в localStorage;
 function checkCart() {
    if (localStorage.getItem('cart') != null) {
       cart = JSON.parse(localStorage.getItem('cart'));
+      count_cart = JSON.parse(localStorage.getItem('count_cart'));
    }
 }
 
@@ -230,57 +239,56 @@ function showMiniCart() {
    if (Object.keys(cart).length == 0) {
       var out = 'Корзина пуста';
       document.getElementById('miniCard').innerHTML = out;
+      count_cart = 0;
    }
-   else{
-   var out = '';
-   for (var key in cart) {
-      out += goods[key].name;
-      out += '<img src="' + goods[key].img + '" >';
-      out += '<p class="BTNs" ><button class="minus" data-art="' + key + '">-</button>';
-      out += cart[key] + 'шт';
-      out += '<button class="plus" data-art="' + key + '">+</button>';
-      out += cart[key] * goods[key].cost + '₴</p>';
-      out += '<hr>';
-
-   }
-   document.getElementById('miniCard').innerHTML = out;
-
-   let plus = document.querySelectorAll('.plus');
-   for (var i = 0; i < plus.length; i++) {
-      plus[i].addEventListener('click', plusGoods);
-   }
-   let minus = document.querySelectorAll('.minus');
-   for (var i = 0; i < minus.length; i++) {
-      minus[i].addEventListener('click', minusGoods);
-   }
-   // document.querySelectorAll('.plus').addEventListener('click', plusGoods);
-   // document.querySelectorAll('.minus').addEventListener('click', minusGoods);
-
-   function plusGoods() {
-      let articul = this.getAttribute('data-art');
-      cart[articul]++;
-      saveCartToLS(); //зберігаю в localStorage
-      showMiniCart();
-   }
-
-   function minusGoods() {
-      let articul = this.getAttribute('data-art');
-      if (cart[articul] > 1) {
-         cart[articul]--;
+   else {
+      var out = '';
+      for (var key in cart) {
+         out += goods[key].name;
+         out += '<img src="' + goods[key].img + '" >';
+         out += '<p class="BTNs" ><button class="minus" data-art="' + key + '">-</button>';
+         out += cart[key] + 'шт';
+         out += '<button class="plus" data-art="' + key + '">+</button>';
+         out += cart[key] * goods[key].cost + '₴</p>';
+         out += '<hr>';
+         count_cart;
       }
-      else {
-         delete cart[articul];
-      }
-      saveCartToLS();//зберігаю в localStorage
-      showMiniCart();
-   }
+      document.querySelector('#easynetshop-cart-count').innerHTML = count_cart;
+      document.getElementById('miniCard').innerHTML = out;
 
-   function saveCartToLS() {
-      localStorage.setItem('cart', JSON.stringify(cart));
-   }
+      let plus = document.querySelectorAll('.plus');
+      for (var i = 0; i < plus.length; i++) {
+         plus[i].addEventListener('click', plusGoods);
+      }
+      let minus = document.querySelectorAll('.minus');
+      for (var i = 0; i < minus.length; i++) {
+         minus[i].addEventListener('click', minusGoods);
+      }
+      function plusGoods() {
+         let articul = this.getAttribute('data-art');
+         cart[articul]++;
+         count_cart++;
+         saveCartToLS();
+         showMiniCart();
+         cartCount();
+      }
+      function minusGoods() {
+         let articul = this.getAttribute('data-art');
+         if (cart[articul] > 1) {
+            cart[articul]--;
+            count_cart--;
+         }
+         else {
+            count_cart--;
+            delete cart[articul];
+         }
+         saveCartToLS();
+         showMiniCart();
+         cartCount();
+      }
+      function saveCartToLS() {
+         localStorage.setItem('cart', JSON.stringify(cart));
+         localStorage.setItem('count_cart', JSON.stringify(count_cart));
+      }
    }
 }
-//Сортування товарів
-
-
-
