@@ -1,0 +1,142 @@
+h1 {
+  text-align: center;
+}
+
+.all,
+.favorite {
+  position: relative;
+  left: 100px;
+  margin: 10px;
+  width: 100px;
+  height: 25px;
+  border-radius: 20px;
+  border: 0px;
+  color: white;
+  background-color: black;
+  cursor: pointer;
+}
+#nameTitle {
+  text-align: center;
+  position: relative;
+  left: 100px;
+  top: -2px;
+  display: block;
+  border: 1px solid silver;
+  width: 250px;
+  height: 540px;
+  float: left;
+  margin: 2px;
+}
+.Title {
+  border-left: 4px solid black;
+  margin: 5px -3px 5px 5px;
+  line-height: 1.6;
+}
+
+.Title:hover {
+  color: white;
+  background-color: black;
+  transition: 0.5s;
+}
+
+#list {
+  margin-left: 100px;
+  width: 1100px;
+}
+
+.card0,
+.card1,
+.card2,
+.card3,
+.card4,
+.card5,
+.card6 {
+  padding: 20px;
+  margin-left: 255px;
+  width: 800px;
+  height: 500px;
+  background-color: black;
+  color: white;
+  border: 1px solid silver;
+  display: none;
+}
+
+.hid {
+  display: block;
+}
+.like {
+  position: relative;
+  bottom: 300px;
+  left: 500px;
+  width: 40px;
+  cursor: pointer;
+  display: block;
+  background-size: 40px;
+}
+.likeCheck{
+  position: relative;
+  bottom: 300px;
+  left: 500px;
+  width: 40px;
+  cursor: pointer;
+  display: block;
+  background-size: 40px;
+}
+.title {
+  position: relative;
+  top: 0px;
+  display: block;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+img {
+  width: 200px;
+}
+
+.im {
+  position: relative;
+  display: block;
+  left: 610px;
+}
+
+.data {
+  position: relative;
+  display: block;
+  top: -300px;
+}
+
+.actorDiv {
+  position: relative;
+  bottom: 270px;
+  display: inline-block;
+}
+
+.actors {
+  border-radius: 10px;
+  border: 1px solid white;
+  background-color: white;
+  color: black;
+  padding: 3px;
+  width: 100px;
+  height: 35px;
+  text-align: center;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.actors:hover {
+  color: white;
+  background-color: black;
+  transition: 0.5s;
+}
+
+.info {
+  display: block;
+  position: relative;
+  bottom: 230px;
+  max-width: 70%;
+}
+/* input {
+  display:none;
+} */
