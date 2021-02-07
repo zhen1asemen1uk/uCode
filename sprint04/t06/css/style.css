@@ -1,0 +1,83 @@
+.name {
+   background-color: darkred;
+   padding: 15px;
+   z-index: 10;
+}
+
+h3 {
+   color: white;
+   font-weight: 900;
+   font-size: larger;
+   margin: 0px;
+}
+
+.wrap {
+   margin: auto;
+   width: 400px;
+   height: 800px;
+   border: 1px solid black;
+   border-radius: 5px;
+}
+
+.chatBox {
+   position: relative;
+   right: 1px;
+   width: 380px;
+   height: 685px;
+   border: 1px solid black;
+   border-collapse: collapse;
+   background-color: silver;
+   padding: 10px;
+   font-size: 20px;
+   overflow-y: auto;
+}
+
+.inputAll {
+   position: relative;
+   left: 1px;
+   top: 1px;
+   border-collapse: collapse;
+   height: 32px;
+}
+
+.enter {
+   height: 30px;
+   width: 351px;
+   background-color: white;
+   border: 0px;
+   font-size: 18px;
+   outline: none;
+}
+
+.textIn {
+   background-color: darkred;
+   color: white;
+   max-width: 400px;
+   min-width: 5px;
+   padding: 5px;
+   border-radius: 8px;
+   text-align: right;
+}
+
+.textOut {
+   background-color: white;
+   max-width: 400px;
+   min-width: 5px;
+   padding: 5px;
+   border-radius: 8px;
+   text-align: left;
+}
+
+.btn {
+   background-color: white;
+   border: 0px;
+   color: darkred;
+   height: 35px;
+   width: 34px;
+   outline: none;
+}
+
+.btn:hover {
+   color: green;
+   cursor: pointer;
+}
