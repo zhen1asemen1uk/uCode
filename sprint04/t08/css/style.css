@@ -1,0 +1,17 @@
+.counter {
+   position: fixed;
+   border: 1px solid black;
+   width: 200px;
+   text-align: center;
+   padding: 10px;
+   top: 20px;
+   right: 30px;
+   border-radius: 30px;
+   background-color: red;
+   transition: 1s;
+}
+
+img {
+   display: block;
+   margin: 100px auto;
+}

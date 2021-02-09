@@ -1,0 +1,49 @@
+body {
+   background-color: silver;
+}
+
+h1 {
+   text-align: center;
+   background-color: rgb(62, 224, 103);
+   margin: 0;
+   color: white;
+}
+
+.form__group {
+   background-color: silver;
+   text-align: center;
+   margin: 0px auto;
+   color: white;
+}
+
+#name, #email, #age {
+   color: rgb(62, 224, 103);
+   border: 0px;
+   background-color: silver;
+   border-bottom: 4px solid white;
+   outline: none;
+   width: 350px;
+   cursor: pointer;
+}
+
+.btn {
+   position: relative;
+   bottom: 8px;
+   background-color: white;
+   color: black;
+   width: 40px;
+   height: 40px;
+   border-radius: 10px;
+   padding: 1px;
+   border: 0px;
+   cursor: pointer;
+}
+
+label {
+   position: relative;
+   right: 160px;
+}
+
+img {
+   width: 100%;
+}
