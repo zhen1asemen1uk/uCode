@@ -27,7 +27,6 @@ map.set("Main Dishes", mainDishes);
 map.set("Desserts", desserts);
 map.set("Drinks", drinks);
 
-console.log(map);
 
 map.forEach(function (value, key) {
   cardMenu += "<div><h2>" + key + "</h2><hr>";

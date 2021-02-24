@@ -1,13 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
+
 <head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="css/style.css">
-   <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/style.css" />
+  <title>Weather forecast</title>
 </head>
+
 <body>
-   
-   <script src="js/script.js"></script>
+  <h1>Weather forecast</h1>
+  <div class="wrapp">
+    <div class="weather__city">${city}</div>
+    <div class="box">
+      <div class="card">
+        <div class="hours">${hours}</div>
+        <hr />
+        <div class="weather__icon">${weather__icon}</div>
+        <div class="weather__forecast">${weather__forecast}</div>
+      </div>
+    </div>
+  </div>
+  <script src="js/script.js"></script>
 </body>
+
 </html>

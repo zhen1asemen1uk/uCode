@@ -50,10 +50,10 @@ h3 {
 }
 
 .textIn {
+   margin: auto 0px auto auto;
    background-color: darkred;
    color: white;
-   max-width: 400px;
-   min-width: 5px;
+   width: fit-content;
    padding: 5px;
    border-radius: 8px;
    text-align: right;
@@ -61,8 +61,7 @@ h3 {
 
 .textOut {
    background-color: white;
-   max-width: 400px;
-   min-width: 5px;
+   width: fit-content;
    padding: 5px;
    border-radius: 8px;
    text-align: left;

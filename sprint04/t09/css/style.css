@@ -1,0 +1,44 @@
+.wrapp {
+  width: 100%;
+  height: 600px;
+}
+
+.box {
+  margin: 0px auto 50px auto;
+  width: 610px;
+  height: 500px;
+  text-align: center;
+  background-color: #0000ff17;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  padding-top: 25px;
+}
+
+.card {
+  display: inline-block;
+  width: 150px;
+  height: 250px;
+  margin: -1px;
+}
+
+.weather__forecast, .weather__desc, .weather__icon {
+  text-align: center;
+}
+
+.weather__city {
+  margin: 50px auto 0px auto;
+  width: 610px;
+  text-align: center;
+  background-color: blue;
+  color: white;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+}
+
+hr {
+  border: 1px solid blue;
+}
+
+.hours {
+  font-weight: 800;
+}

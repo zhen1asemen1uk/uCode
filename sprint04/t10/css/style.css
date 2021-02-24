@@ -1,0 +1,57 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+
+  background-color: #6f6c6c;
+  color: rgb(255, 255, 255);
+  padding-left: 10px;
+}
+.inp {
+  color: black;
+}
+input {
+  border-top: 3px solid black;
+  border-left: 3px solid black;
+  padding: 5px 20px;
+  width: 250px;
+  font-weight: 800;
+}
+
+.text {
+  margin: 20px 0px;
+}
+.search,
+.random,
+.compare {
+  display: inline-block;
+  border: 1px solid black;
+  padding: 4px;
+  background-color: rgb(255, 255, 255);
+  cursor: pointer;
+}
+
+.cardHeroName {
+  font-family: Arial, Helvetica, sans-serif;
+  display: block;
+  float: left;
+  margin: 8px;
+  text-align: center;
+  width: fit-content;
+  padding: 5px 15px;
+  min-height: 40px;
+  height: fit-content;
+  cursor: pointer;
+  color: black;
+  background-color: rgb(255, 255, 255);
+}
+.textSearch {
+  margin: 22px 0px;
+}
+.nameHero {
+  padding: 25px 60px;
+  font-weight: 800;
+}
+
+#columnchart_material {
+  display: inline-block;
+  background-color: #6f6c6c;
+}

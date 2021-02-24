@@ -1,13 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="css/style.css">
-   <title>Document</title>
-</head>
-<body>
-   
-   <script src="js/script.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap"
+      rel="stylesheet"
+    />
+    <title>Super-stats</title>
+  </head>
+  <body>
+    <h1>Super-stats</h1>
+
+    <div class="wrapp">
+      <div class="text">
+        <span
+          >Compare stats of different superheroes.<br />
+          Find superheroes to compare using search, or click 'Random' to select
+          a random superhero.<br />
+          once you have selected all the heroes you want to compare, click
+          'Compare'<br />
+        </span>
+      </div>
+      <form class="inp">
+        <input class="hero" type="text" placeholder="search for a superhero" />
+        <div class="search">SEARCH</div>
+        <div class="random">RANDOM</div>
+        <div class="compare">COMPARE:0</div>
+      </form>
+    </div>
+    <div id="box"></div>
+
+    <div id="columnchart_material" style="width: 800px; height: 500px"></div>
+    <script
+      type="text/javascript"
+      src="https://www.gstatic.com/charts/loader.js"
+    ></script>
+
+    <script src="js/script.js"></script>
+  </body>
 </html>

@@ -10,7 +10,6 @@ let count = 0;
 
 //клік на відправку
 btn.addEventListener("click", () => {
-   console.log(count);
    chatBox.innerHTML += `<p class="textIn">${enter.value}</p>`;
    if (count >= 5 && (hi.test(enter.value) || hello.test(enter.value) || privet.test(enter.value) || pruvit.test(enter.value) || hey.test(enter.value))) {
       chatBox.innerHTML += `<p class="textOut">I will not respond to that</p>`;
